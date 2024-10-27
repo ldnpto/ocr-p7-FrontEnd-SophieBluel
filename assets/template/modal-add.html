@@ -1,0 +1,36 @@
+<div class="modal-add">
+
+    <div class="modal-add-top">
+      <button title="back" class="back-arrow">
+        <i class="fa-solid fa-arrow-left"></i>
+      </button>
+      <div class="close-modal">        
+          <button title="close" class="close-x"><i class="fa-solid fa-xmark"></i></button>
+      </div>
+    </div>
+    <div class="add-photo">
+        <form action="#" method="post" id="add-photo-form">
+            <h3 class="modal-title">Ajout photo</h3>
+            <div class="new-photo">
+              <i class="photo-icon fa-regular fa-image"></i>
+              <label class="add-photo-button" for="add-photo">+ Ajouter photo</label>
+              <input
+                type="file"
+                name="add-photo"
+                id="add-photo"
+                accept=".jpg, .png"
+              />
+              <p>jpg, png: 4 mo max</p>
+            </div>
+            <label for="title-input" class="label-input">Titre</label>
+            <input type="text" name="title-input" id="title-input"/>
+            <label for="category-input" class="label-input">Catégorie</label>
+            <select class="category-choice" name="category-input" id="category-input"></select>
+            <div class="errorMessage"></div>
+          </form>
+          
+    </div>
+    <hr />
+    <button class="add-photo-confirm-button category-btn">Valider</button>
+
+</div>
