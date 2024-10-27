@@ -8,7 +8,7 @@ if (token) {
 
         const modalAdd = document.querySelector('.template-modal-add');
 
-        fetch("/assets/template/modal-add.html")
+        fetch("assets/template/modal-add.html")
         .then(response => response.text())
         .then(data => {
             // insertion du template html "modal-delete"

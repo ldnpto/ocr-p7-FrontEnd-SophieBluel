@@ -10,7 +10,7 @@ if (token) {
         modal.setAttribute('aria-hidden', 'false');
         const modalDelete = document.querySelector('.template-modal-delete');
 
-        fetch("/assets/template/modal-delete.html")
+        fetch("assets/template/modal-delete.html")
         .then(response => response.text())
         .then(data => {
             // insertion du template html "modal-delete"
