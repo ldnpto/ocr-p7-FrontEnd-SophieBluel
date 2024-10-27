@@ -1,0 +1,10 @@
+site_name: OCR Projet 7 - Créez une page web dynamique avec JavaScript
+site_url: https://github.com/ldnpto/ocr-p7-FrontEnd-SophieBluel
+theme:
+  name: material
+  palette:
+    primary: deep_orange
+    accent: amber
+  font:
+    text: Roboto
+    code: Roboto Mono
