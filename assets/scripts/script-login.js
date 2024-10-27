@@ -38,7 +38,8 @@ document.addEventListener('DOMContentLoaded', () => {
                     alert('Login failed: No token received.');
                 }
             } else {
-                alert('Login failed: Invalid credentials.');
+                errorMessage.textContent = "Erreur dans l’identifiant ou le mot de passe";                
+                return;
             }
         } catch (error) {
             console.error('Error:', error);
