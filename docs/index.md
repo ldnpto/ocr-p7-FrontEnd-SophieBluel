@@ -23,4 +23,4 @@ En tant que développeur front-end de l’agence ArchiWebos, je dispose de la ma
 #### 5.1 ajout de l'overlay et de la modale de suppression de travaux existants (rafraichissement de l'affichage des travaux à chaque suppression dans la modale et la gallerie de la page d'accueil)
 #### 6.1 ajout de la modale d'ajout de nouveaux travaux, et gestion des champs obligatoires du formulaire avec le bouton de validation, et rafraichissement de la gallerie
 
-## Documentation avec MKDocs et publication dans GitHub
+## Documentation avec MKDocs et publication dans GitHub 
