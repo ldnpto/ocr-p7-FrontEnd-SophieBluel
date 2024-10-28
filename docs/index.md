@@ -21,6 +21,9 @@ En tant que développeur front-end de l’agence ArchiWebos, je dispose de la ma
 ### 4 - gestion du mode édition sur la page d'accueil lorsqu'un jeton valide est présent (à l'expiration du jeton, le jeton est supprimé)
 ### 5 développement de la modale
 #### 5.1 ajout de l'overlay et de la modale de suppression de travaux existants (rafraichissement de l'affichage des travaux à chaque suppression dans la modale et la gallerie de la page d'accueil)
-#### 6.1 ajout de la modale d'ajout de nouveaux travaux, et gestion des champs obligatoires du formulaire avec le bouton de validation, et rafraichissement de la gallerie
+#### 5.2 ajout de la modale d'ajout de nouveaux travaux, et gestion des champs obligatoires du formulaire avec le bouton de validation, et rafraichissement de la gallerie
 
-## Documentation avec MKDocs et publication dans GitHub 
+## Publication dans GitHub
+### Synchronisation des sources avec un dépôt GitHub 
+### Publication du site avec GitHub pages
+### Publication de la documentation avec MKDocs
