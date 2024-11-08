@@ -42,4 +42,4 @@ L'utilisation de template m'a fait gagné du temps pour la mise en forme des mod
 Les algorithmes de récupération des données à partir des APIs ont été facilement implémentés, en mettant à profit GitHub Copilot
 Les étapes du projet sont bien détaillées ce qui permet d'avancer progressivement
 ### Difficultés rencontrées
-La difficulté principale a été de bien mettre en forme les éléments dans la modale, ce qui nécessite de nombreux ajustements CSS pour obtenir un rendu fidèle à la maquette
+La difficulté principale a été de bien mettre en forme les éléments dans la modale, ce qui nécessite de nombreux ajustements CSS pour obtenir un rendu fidèle à la maquette 
