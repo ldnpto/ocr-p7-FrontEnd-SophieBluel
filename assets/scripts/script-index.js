@@ -15,7 +15,7 @@ if (!token) {
         elementsEdition[i].classList.add("hidden");
         const logoutElement = document.querySelector('.logout');
         if (logoutElement) {
-            logoutElement.textContent = 'log in';
+            logoutElement.textContent = 'login';
         }
     }
     

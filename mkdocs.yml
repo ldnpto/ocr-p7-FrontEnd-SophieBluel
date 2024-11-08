@@ -1,10 +1,55 @@
 site_name: OCR Projet 7 - Créez une page web dynamique avec JavaScript
 site_url: https://github.com/ldnpto/ocr-p7-FrontEnd-SophieBluel
+repo_url: https://github.com/ldnpto/ocr-p7-FrontEnd-SophieBluel
+repo_name: OCR Projet 7 - Créez une page web dynamique avec JavaScript
+site_dir: MKDocs
 theme:
   name: material
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - toc.integrate
+    - navigation.top
+    - search.suggest
+    - search.highlight
+    - content.tabs.link
+    - content.code.annotation
+    - content.code.copy
+    - content.code.select
+    - content.code.annotate
+  navigation_depth: 1
+  language: en
   palette:
-    primary: deep_orange
-    accent: amber
+    - scheme: default
+      toggle:
+        icon: material/toggle-switch-off-outline 
+        name: Switch to dark mode
+      primary: teal
+      accent: purple 
+    - scheme: slate 
+      toggle:
+        icon: material/toggle-switch
+        name: Switch to light mode    
+      primary: teal
+      accent: lime
   font:
     text: Roboto
     code: Roboto Mono
+  icon:
+    annotation: material/arrow-right-circle
+markdown_extensions:
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.mark
+  - pymdownx.arithmatex:
+      generic: true
+  - admonition
+  - footnotes
+  - attr_list
+  - md_in_html

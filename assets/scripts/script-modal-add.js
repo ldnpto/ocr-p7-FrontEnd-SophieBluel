@@ -3,10 +3,13 @@
 if (token) {   
 
     const modal = document.getElementById('modal');
+    const errorMessage = document.querySelector('.errorMessage');
+
     function renderModalAdd()  {   
         modal.setAttribute('aria-hidden', 'false');
 
         const modalAdd = document.querySelector('.template-modal-add');
+        
 
         fetch("assets/template/modal-add.html")
         .then(response => response.text())
@@ -60,7 +63,12 @@ if (token) {
 
             // ajout de la prévisualisation de l'image
             const addPhoto = document.getElementById('add-photo');
-            addPhoto.addEventListener('change', (event) => {                
+            addPhoto.addEventListener('change', (event) => { 
+                if (event.target.files[0].size > 4000000) {   // fichier plus grand que 4Mo
+                    
+                    errorMessage.textContent = "La taille de l'image ne doit pas dépasser 4Mo";
+                    return;
+                }
                 const previewImage = document.createElement("img");
                 previewImage.src = URL.createObjectURL(event.target.files[0]);
                 previewImage.style.maxHeight = "100%";
@@ -105,8 +113,7 @@ if (token) {
             confirmButton.addEventListener('click', () => {
                 // vérification des champs du formulaire
                 const title = document.getElementById('title-input');
-                const category = document.getElementById('category-input');
-                const errorMessage = document.querySelector('.errorMessage');
+                const category = document.getElementById('category-input');                
                 if (title.value == "" || category.value == 0 || addPhoto.value == "") {
                     errorMessage.textContent = "Veuillez ajouter une photo et remplir tous les champs du formulaire";
                 } else {

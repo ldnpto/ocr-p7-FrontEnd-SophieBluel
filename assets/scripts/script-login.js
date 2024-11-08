@@ -10,8 +10,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
         if (!emailPattern.test(email)) {
-            errorMessage.textContent = "Invalid email format";
-            alert('Invalid email format.');
+            errorMessage.textContent = "Invalid email format";            
             return;
         }
         const passwordPattern = /^(?=.*\d)(?=.*[A-Z]).{6,}$/;

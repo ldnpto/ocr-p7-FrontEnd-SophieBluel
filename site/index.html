@@ -29,6 +29,12 @@
       
       
 
+  
+  
+  
+  
+  <style>:root{--md-annotation-icon:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M22 12a10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2a10 10 0 0 1 10 10M6 13h8l-3.5 3.5 1.42 1.42L17.84 12l-5.92-5.92L10.5 7.5 14 11H6z"/></svg>');}</style>
+
 
     
     
@@ -56,10 +62,12 @@
   
     
     
+      
     
     
     
-    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="deep_orange" data-md-color-accent="amber">
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="teal" data-md-color-accent="purple">
   
     
     <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
@@ -80,9 +88,7 @@
     
       
 
-  
-
-<header class="md-header md-header--shadow" data-md-component="header">
+<header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
     <a href="." title="OCR Projet 7 - Créez une page web dynamique avec JavaScript" class="md-header__button md-logo" aria-label="OCR Projet 7 - Créez une page web dynamique avec JavaScript" data-md-component="logo">
       
@@ -112,7 +118,33 @@
     </div>
     
       
+        <form class="md-header__option" data-md-component="palette">
+  
     
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="teal" data-md-color-accent="purple"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 6H7c-3.31 0-6 2.69-6 6s2.69 6 6 6h10c3.31 0 6-2.69 6-6s-2.69-6-6-6m0 10H7c-2.21 0-4-1.79-4-4s1.79-4 4-4h10c2.21 0 4 1.79 4 4s-1.79 4-4 4M7 9c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="teal" data-md-color-accent="lime"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h10a5 5 0 0 0 5-5 5 5 0 0 0-5-5m0 8a3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3 3 3 0 0 1-3 3"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
     
     
     
@@ -139,6 +171,8 @@
         </button>
       </nav>
       
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
     </form>
     <div class="md-search__output">
       <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
@@ -163,6 +197,34 @@
       
         
           
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+    
+  
+  
+    <li class="md-tabs__item md-tabs__item--active">
+      <a href="." class="md-tabs__link">
+        
+  
+    
+  
+  Presentation du projet 7
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
         
       
       <main class="md-main" data-md-component="main">
@@ -176,8 +238,12 @@
                     
 
 
+  
 
-<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
     <a href="." title="OCR Projet 7 - Créez une page web dynamique avec JavaScript" class="md-nav__button md-logo" aria-label="OCR Projet 7 - Créez une page web dynamique avec JavaScript" data-md-component="logo">
       
@@ -330,6 +396,15 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#liste-des-fichiers-modifies-et-ajoutes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Liste des fichiers modifiés et ajoutés
+    </span>
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -392,167 +467,6 @@
               </div>
             
             
-              
-              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
-                <div class="md-sidebar__scrollwrap">
-                  <div class="md-sidebar__inner">
-                    
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#demarrage" class="md-nav__link">
-    <span class="md-ellipsis">
-      Démarrage
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#developpements" class="md-nav__link">
-    <span class="md-ellipsis">
-      Développements
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Développements">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#1-recuperation-des-travaux-depuis-le-back-end-en-methode-get-via-lurl-httplocalhost5678apiworks-et-ajout-des-elements-html-en-javascript" class="md-nav__link">
-    <span class="md-ellipsis">
-      1 - récupération des travaux depuis le back-end en méthode GET via l'url http://localhost:5678/api/works et ajout des éléments HTML en javascript
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#2-recuperation-des-catagories-depuis-le-back-end-en-methode-get-via-lurl-httplocalhost5678apicategories-et-ajout-des-boutons-permettant-de-filtrer-la-gallerie-par-categorie" class="md-nav__link">
-    <span class="md-ellipsis">
-      2 - récupération des catagories depuis le back-end en méthode GET via l'url http://localhost:5678/api/categories et ajout des boutons permettant de filtrer la gallerie par catégorie
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#3-ajout-dune-page-de-connexion-loginhtml-gerant-le-format-du-mot-de-passe-lauthentification-en-erreur-et-lauthentification-correcte-renvoyant-un-jeton-stocke-dans-le-localstorage-du-navigateur-avec-redirection-vers-la-page-daccueil" class="md-nav__link">
-    <span class="md-ellipsis">
-      3 - ajout d'une page de connexion login.html gérant le format du mot de passe, l'authentification en erreur, et l'authentification correcte renvoyant un jeton stocké dans le localStorage du navigateur avec redirection vers la page d'accueil
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#4-gestion-du-mode-edition-sur-la-page-daccueil-lorsquun-jeton-valide-est-present-a-lexpiration-du-jeton-le-jeton-est-supprime" class="md-nav__link">
-    <span class="md-ellipsis">
-      4 - gestion du mode édition sur la page d'accueil lorsqu'un jeton valide est présent (à l'expiration du jeton, le jeton est supprimé)
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#5-developpement-de-la-modale" class="md-nav__link">
-    <span class="md-ellipsis">
-      5 développement de la modale
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="5 développement de la modale">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#51-ajout-de-loverlay-et-de-la-modale-de-suppression-de-travaux-existants-rafraichissement-de-laffichage-des-travaux-a-chaque-suppression-dans-la-modale-et-la-gallerie-de-la-page-daccueil" class="md-nav__link">
-    <span class="md-ellipsis">
-      5.1 ajout de l'overlay et de la modale de suppression de travaux existants (rafraichissement de l'affichage des travaux à chaque suppression dans la modale et la gallerie de la page d'accueil)
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#52-ajout-de-la-modale-dajout-de-nouveaux-travaux-et-gestion-des-champs-obligatoires-du-formulaire-avec-le-bouton-de-validation-et-rafraichissement-de-la-gallerie" class="md-nav__link">
-    <span class="md-ellipsis">
-      5.2 ajout de la modale d'ajout de nouveaux travaux, et gestion des champs obligatoires du formulaire avec le bouton de validation, et rafraichissement de la gallerie
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#publication-dans-github" class="md-nav__link">
-    <span class="md-ellipsis">
-      Publication dans GitHub
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Publication dans GitHub">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#synchronisation-des-sources-avec-un-depot-github" class="md-nav__link">
-    <span class="md-ellipsis">
-      Synchronisation des sources avec un dépôt GitHub
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#publication-du-site-avec-github-pages" class="md-nav__link">
-    <span class="md-ellipsis">
-      Publication du site avec GitHub pages
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#publication-de-la-documentation-avec-mkdocs" class="md-nav__link">
-    <span class="md-ellipsis">
-      Publication de la documentation avec MKDocs
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-                  </div>
-                </div>
-              </div>
-            
           
           
             <div class="md-content" data-md-component="content">
@@ -583,6 +497,22 @@
 <h3 id="5-developpement-de-la-modale">5 développement de la modale</h3>
 <h4 id="51-ajout-de-loverlay-et-de-la-modale-de-suppression-de-travaux-existants-rafraichissement-de-laffichage-des-travaux-a-chaque-suppression-dans-la-modale-et-la-gallerie-de-la-page-daccueil">5.1 ajout de l'overlay et de la modale de suppression de travaux existants (rafraichissement de l'affichage des travaux à chaque suppression dans la modale et la gallerie de la page d'accueil)</h4>
 <h4 id="52-ajout-de-la-modale-dajout-de-nouveaux-travaux-et-gestion-des-champs-obligatoires-du-formulaire-avec-le-bouton-de-validation-et-rafraichissement-de-la-gallerie">5.2 ajout de la modale d'ajout de nouveaux travaux, et gestion des champs obligatoires du formulaire avec le bouton de validation, et rafraichissement de la gallerie</h4>
+<h3 id="liste-des-fichiers-modifies-et-ajoutes">Liste des fichiers modifiés et ajoutés</h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="l l-Scalar l-Scalar-Plain">├─ overrides/</span>
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="l l-Scalar l-Scalar-Plain">│  └─ .icons/</span>
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="l l-Scalar l-Scalar-Plain">│     └─ bootstrap/</span>
+<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="l l-Scalar l-Scalar-Plain">│        └─ *.svg  (1)</span>
+<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="l l-Scalar l-Scalar-Plain">└─ mkdocs.yml  (2)</span>
+<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="l l-Scalar l-Scalar-Plain">{ .annotate }</span>
+<a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a><span class="l l-Scalar l-Scalar-Plain">1.  mon texte terms of service or other parts of the site.</span>
+<a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a><span class="l l-Scalar l-Scalar-Plain">2.  deuxième texte</span><span class="w"> </span>
+</code></pre></div>
+<div class="highlight"><span class="filename">Text with annotations</span><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>Lorem ipsum dolor sit amet, (1) consectetur adipiscing elit.
+<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>{ .annotate }
+<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>
+<a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a><span class="k">1.</span>  :man_raising_hand: I&#39;m an annotation! I can contain <span class="sb">`code`</span>, __formatted
+<a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a>    text__, images, ... basically anything that can be expressed in Markdown.
+</code></pre></div>
 <h2 id="publication-dans-github">Publication dans GitHub</h2>
 <h3 id="synchronisation-des-sources-avec-un-depot-github">Synchronisation des sources avec un dépôt GitHub</h3>
 <h3 id="publication-du-site-avec-github-pages">Publication du site avec GitHub pages</h3>
@@ -604,8 +534,16 @@
             </div>
           
           
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
 <script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
         </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
         
       </main>
       
@@ -633,7 +571,7 @@
     </div>
     
     
-    <script id="__config" type="application/json">{"base": ".", "features": [], "search": "assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": ".", "features": ["navigation.tabs", "navigation.sections", "toc.integrate", "navigation.top", "search.suggest", "search.highlight", "content.tabs.link", "content.code.annotation", "content.code.copy"], "search": "assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
       <script src="assets/javascripts/bundle.83f73b43.min.js"></script>

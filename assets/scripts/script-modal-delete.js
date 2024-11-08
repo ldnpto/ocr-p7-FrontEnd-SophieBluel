@@ -68,17 +68,13 @@ if (token) {
         })
         .then(response => {
             if (response.ok) {
+                refreshGallery();
                 return response.text().then(text => text ? JSON.parse(text) : {});
             } else {
                 throw new Error('Network response was not ok.');
             }
         })
-        .then(data => {            
-            // refresh gallery
-            refreshGallery();
-        })
-        .catch(error => console.error('Error deleting data:', error));
-        
+        .catch(error => console.error('Error deleting data:', error));        
 
     }
 
